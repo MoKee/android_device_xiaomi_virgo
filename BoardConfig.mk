@@ -22,7 +22,7 @@ LOCAL_PATH := device/xiaomi/virgo
 TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)/releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_virgo
 
-TARGET_BOARD_INFO_FILE ?= $(LOCAL_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE := $(LOCAL_PATH)/board-info.txt
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
