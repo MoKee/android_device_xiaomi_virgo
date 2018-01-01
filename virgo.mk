@@ -22,7 +22,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hsic.control.bt.sh \
     init.qcom.bt.sh \
-    init.qcom.fm.sh \
     init.qcom.modem_links.sh \
     init.qcom.post_boot.sh \
     init.qcom.wifi.sh \
@@ -186,11 +185,6 @@ PRODUCT_PACKAGES += \
 # Keystore
 PRODUCT_PACKAGES += \
     keystore.msm8974
-
-# FM Radio
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
 
 # Misc dependency packages
 PRODUCT_PACKAGES += \
