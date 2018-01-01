@@ -119,6 +119,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/acdb/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     $(LOCAL_PATH)/audio/acdb/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/bl_lut.txt:system/etc/bl_lut.txt
 
 # Media profile
 PRODUCT_COPY_FILES += \
