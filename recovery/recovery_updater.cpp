@@ -181,10 +181,10 @@ Value * VerifyBasebandFn(const char *name, State *state, int argc, Expr *argv[])
         }
     }
 
-    uiPrintf(state, "ERROR: It appears you are running an unsupported baseband. Please visit   http://bit.ly/cancroCMBaseband   to learn how to update.");
+    uiPrintf(state, "ERROR: It appears you are running an unsupported baseband.");
     return StringValue(strdup("0"));
 }
 
-void Register_librecovery_updater_cancro() {
-    RegisterFunction("cancro.verify_baseband", VerifyBasebandFn);
+void Register_librecovery_updater_virgo() {
+    RegisterFunction("virgo.verify_baseband", VerifyBasebandFn);
 }

@@ -1,7 +1,7 @@
 # Common QCOM configuration tools
 $(call inherit-product, device/qcom/common/Android.mk)
 
-LOCAL_PATH := device/xiaomi/cancro
+LOCAL_PATH := device/xiaomi/virgo
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -220,7 +220,7 @@ PRODUCT_PACKAGES += \
     libantradio
 
 # Baseband assertion
-PRODUCT_PACKAGES += librecovery_updater_cancro
+PRODUCT_PACKAGES += librecovery_updater_virgo
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -267,4 +267,4 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/xiaomi/cancro/cancro-vendor.mk)
+$(call inherit-product, vendor/xiaomi/virgo/virgo-vendor.mk)
