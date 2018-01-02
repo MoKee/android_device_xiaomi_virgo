@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw \
+    libstagefrighthw
 
 PRODUCT_PACKAGES += \
     audiod \
