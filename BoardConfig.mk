@@ -193,6 +193,11 @@ include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += \
         $(LOCAL_PATH)/sepolicy
 
+# TWRP Support
+ifeq ($(WITH_TWRP),true)
+-include $(LOCAL_PATH)/twrp/twrp.mk
+endif
+
 # Dual sim solution in virgo
 CONFIG_EAP_PROXY_DUAL_SIM := true
 
