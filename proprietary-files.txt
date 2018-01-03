@@ -1,42 +1,47 @@
 # Bluetooth
-bin/btnvtool
-vendor/lib/libbtnv.so
+bin/btnvtool|09fd5d1deebc160207f8a65e9ec181d1b56f5ff9
+bin/hci_qcomm_init|7603d99cdbdc1b83af71aafcef957c48e90ba9ae
+vendor/lib/libbtnv.so|e0ba4b0c4fc6ab38b2504bea1596ff58dfe6c307
 
 # ADSP
-bin/adsprpcd
+bin/adsprpcd|aa97571db27377f16b790eb312ad5936f84a666f
 lib/rfsa/adsp/libapps_mem_heap.so
 lib/rfsa/adsp/libdspCV_skel.so
 lib/rfsa/adsp/libfastcvadsp.so
 lib/rfsa/adsp/libfastcvadsp_skel.so
 lib/rfsa/adsp/libscveT2T_skel.so
-vendor/lib/libacdbmapper.so
-vendor/lib/libadsprpc.so
+vendor/lib/libacdbmapper.so|376536e1618678ebe5e678bb8c6ea5fc1043aae7
+vendor/lib/libadsprpc.so|ab4acf96ada648059032ee394927612650cebe8e
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
-vendor/lib/libscve.so
-vendor/lib/libscve_stub.so
+vendor/lib/libscve.so|142e7f0497f418d0389d3c5886f5ace874418ae6
+vendor/lib/libscve_stub.so|5eba058f976efd08ec626c44ab223cc83c2b03b1
 
 # Audio
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libDiracAPI_SHARED.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libsrsprocessing.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libdirac.so
+lib/soundfx/libdirac.so|df1c5278273cd313e02037601413e258ab1c120d
+lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
+vendor/lib/libacdbloader.so|4f486a360aad554402c33587adb71bfae4a3ce31
+vendor/lib/libacdbrtac.so|3a7fb4be8278e9dd2af2fee448442d24f942c674
+vendor/lib/libadiertac.so|99fc3d5badf88b1738dfb6b0aa0ded734abdeb53
+vendor/lib/libaudcal.so|306de1077385a9731010d873c0bd6543a2db7970
+vendor/lib/libaudioalsa.so|3450bfffe26e43bb20c4bc144455a1d44c86dd11
+vendor/lib/liblistenhardware.so|70e60610b6be0189599665eaf5897b98dc0b1936
+vendor/lib/liblistenjni.so|71246defe1e786919b51de4e577e0371be86f25a
+vendor/lib/liblisten.so|94c4ee3603b058f86a80151db65300860a1a7af0
+vendor/lib/liblistensoundmodel.so|ce73b38c58e87a437dc91420660c115cbe1d68d0
+vendor/lib/soundfx/libqcbassboost.so|8df06ffa55cab5ea02ec9ce74f1a15f913d7bc4f
+vendor/lib/soundfx/libqcreverb.so|eab7acb1cbe9556f9c564cc870f755ce70d2791d
+vendor/lib/soundfx/libqcvirt.so|5f72150e6e6b053d19cb789931981594afb61bc9
 
 # Camera
 bin/mm-qcamera-daemon
 etc/android_model_facea.dat
 etc/android_model_faceg.dat
+etc/people_gender.dat
 etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin
 etc/sdm_200_HOG3x3_Grid3x3_bin5_noproj_zero_reduced.bin.pca
-lib/hw/camera.vendor.msm8974.so
-lib/libc2dcolorconvert.so
+etc/watermark_font_2300_3199.dat
+lib/hw/camera.msm8974.so:lib/hw/camera.vendor.msm8974.so
 lib/libchromatix_imx135_liveshot.so
 lib/libchromatix_imx214_liveshot.so
 lib/libchromatix_imx215_liveshot.so
@@ -45,12 +50,12 @@ lib/libchromatix_imx224_liveshot.so
 lib/libchromatix_imx225_liveshot.so
 lib/libchromatix_imx226_liveshot.so
 lib/libchromatix_s5k3m2_liveshot.so
+lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
-lib/libOmxVenc.so
 lib/libqomx_core.so
 lib/libRecoFace.so
-vendor/lib/libAKM8963.so
+vendor/lib/libAKM8963.so|b144b858b42854983b70c6b36781a091cd67621a
 vendor/lib/libactuator_ad5823.so
 vendor/lib/libactuator_ad5823_camcorder.so
 vendor/lib/libactuator_ad5823_camera.so
@@ -258,12 +263,10 @@ vendor/lib/libchromatix_skuf_ov5648_p5v23c_common.so
 vendor/lib/libchromatix_skuf_ov5648_p5v23c_default_video.so
 vendor/lib/libchromatix_skuf_ov5648_p5v23c_preview.so
 vendor/lib/libchromatix_skuf_ov5648_p5v23c_snapshot.so
-vendor/lib/libFaceDeform.so
 vendor/lib/libFaceProc.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmm-color-convertor.so
-vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -322,116 +325,99 @@ vendor/lib/libmmcamera_x4_s5k3m2_eeprom.so
 vendor/lib/libmmcamera_x5_imx214_eeprom.so
 vendor/lib/libmmipl.so
 vendor/lib/libmmjpeg.so
+vendor/lib/libmmparser.so
 vendor/lib/libmmqjpeg_codec.so
-vendor/lib/libmmQSM.so
 vendor/lib/liboemcamera.so
-vendor/lib/liboptizoom.so
-vendor/lib/libqct_resampler.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
+vendor/lib/libt2tmanager.so
 vendor/lib/libubifocus.so
 
 # Charger
 bin/charger_monitor
 bin/hvdcp
 
-# ConsumerIR
-lib/hw/consumerir.msm8974.so
-
 # DRM
-bin/qseecomd
-lib/libdrmdecrypt.so
-vendor/lib/libdrmdecrypt.2.so
-vendor/lib/liboemcrypto.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libdrmfs.so
-vendor/lib/libdrmtime.so
-vendor/lib/librpmb.so
-vendor/lib/libssd.so
-vendor/lib/mediadrm/libdrmclearkeyplugin.so
+bin/qseecomd|3f31ee375bb428ec6fbd2051ba5a5e3a974ce1ac
+vendor/lib/libQSEEComAPI.so|394c357c961b6d2189d585a7723f9e0cf00ac6b2
+vendor/lib/libdrmdiag.so|1aa9354d0474978df6d115d0cc323c1f5ec1085c
+vendor/lib/libdrmfs.so|58e9c79015e41584ac428e1b38ef7123b08341d7
+vendor/lib/libdrmtime.so|11453596a444d331d6f752381757f29bdd4e9140
+vendor/lib/librpmb.so|539ebd9a37c5b4d6133dd83b744a04f957a8f563
+vendor/lib/libssd.so|635664a6c4c3a5c83836770960bf8b2d6d935371
 
 # Firmware
-lib/libstm-log.so
-vendor/firmware/bcm2079x-b5_firmware.ncd
-vendor/firmware/bcm2079x-b5_pre_firmware.ncd
 vendor/firmware/keymaster/keymaster.b00
 vendor/firmware/keymaster/keymaster.b01
 vendor/firmware/keymaster/keymaster.b02
 vendor/firmware/keymaster/keymaster.b03
 vendor/firmware/keymaster/keymaster.mdt
 
-# FM
-bin/fm_qsoc_patches
-
 # GPS
 bin/loc_launcher
-bin/quipc_igsn
-bin/quipc_main
 lib/hw/gps.msm8974.so
 lib/libloc_api_v02.so
-lib/libloc_ds_api.so
 lib/libgps.utils.so
 lib/libloc_core.so
 lib/libloc_eng.so
 vendor/lib/hw/flp.default.so
+vendor/lib/libflp.so
 vendor/lib/libgeofence.so
 vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
-vendor/lib/liblocationservice.so
-vendor/lib/libquipc_os_api.so
-vendor/lib/libquipc_ulp_adapter.so
-vendor/lib/libulp2.so
-vendor/lib/libxtadapter.so
 
 # Graphics
-vendor/lib/egl/eglsubAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30-a3xx.so
-vendor/lib/libc2d30-a4xx.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/libOpenVG.so
-vendor/lib/libsc-a2xx.so
-vendor/lib/libsc-a3xx.so
-vendor/lib/libRSDriver_adreno.so
-vendor/lib/librs_adreno.so
-vendor/lib/librs_adreno_sha1.so
-vendor/lib/libuiblur.so
+vendor/lib/egl/eglsubAndroid.so|b8c0e46e7b9819b85f9afa337cf4579dea1bdd50
+vendor/lib/egl/libEGL_adreno.so|d68a151094f04fa0878fe21a1874685fce8564ab
+vendor/lib/egl/libGLESv1_CM_adreno.so|89d1c6988b62f71dbcd809cabe50c5514efb4e4e
+vendor/lib/egl/libGLESv2_adreno.so|906af14337b8a80254967bf6809d1ae87812421c
+vendor/lib/egl/libq3dtools_adreno.so|e346f2234774992518f5106cb9f7832257e4e395
+vendor/lib/libadreno_utils.so|d32cfe0083add95384e6cccf1620584669beb626
+vendor/lib/libbccQTI.so|597d4ec355d4b56cb89b0f4ab707cc2cc8694d40
+vendor/lib/libC2D2.so|930bfa9aface22b4ceed13f3a824b59c2d637d21
+vendor/lib/libc2d30-a3xx.so|ca59ec2d01cde54289219ec528d501bea4fec4c9
+vendor/lib/libc2d30-a4xx.so|561ee6cfb0a51815ccae845155e53c08a29762fa
+vendor/lib/libCB.so|988840ffafed704302f82d6deeb861431bed97bf
+vendor/lib/libgsl.so|0125b1b07b95112f5600e7d23973e7d2061196d1
+vendor/lib/libllvm-qcom.so|d3f8cf14afeb64fb5e5d7c7e2de763b313b8b327
+vendor/lib/libOpenCL.so|232e14d6b0512876c6c024705a9c44866b7d2084
+vendor/lib/libscale.so|58c2d6dda706800d40407fa8b13d0a6ba602cd6b
+vendor/lib/libsc-a3xx.so|ebd30d961fd2919bf57d86b8d7771330288ab7da
+vendor/lib/libRSDriver_adreno.so|ff009749e3f0d73118edf5f0e6ba82da3f09ac51
+vendor/lib/librs_adreno.so|41f58624a6ba97858bf8fbf00938256482aef7a0
+vendor/lib/librs_adreno_sha1.so|4e526a49fecf340df8afa404bfb6d9a2e86b9876
 
 # Graphics firmware
 etc/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw
 
 # Media
-vendor/lib/libDivxDrm.so
-vendor/lib/libHevcSwDecoder.so
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libmmosal.so
-vendor/lib/libSHIMDivxDrm.so
+lib/libOmxVdecHevc.so|b1f1198ea5109c69ab2a35d1f799a4ed68cad910
+vendor/lib/libDivxDrm.so|c65f0b52ea0604732433929381e48e6f89a292ae
+vendor/lib/libHevcSwDecoder.so|dbe15ee9d0863873d24dffcd9f4a520a985876c0
+vendor/lib/libI420colorconvert.so|8b2fc81122ca24ad70dde1a370eff552eea3b857
+vendor/lib/libmmosal.so|838e8f778f31221b06260f5944d8cbab80893343
+vendor/lib/libSHIMDivxDrm.so|48bc5c12fbd8068f6df2700d912da115532a15d6
+vendor/lib/libOmxAacDec.so
+vendor/lib/libOmxAmrwbplusDec.so
+vendor/lib/libOmxEvrcDec.so
+vendor/lib/libOmxQcelp13Dec.so
+vendor/lib/libOmxWmaDec.so
 
 # Perf
-bin/mpdecision
-bin/qosmgr
-vendor/lib/libqti-perfd-client.so
+bin/mpdecision|3f4e253ccbc52ceef09b87f0752037ba6c6dd8d1
+vendor/lib/libqc-opt.so|72286ef823edbef0e33e37e619d1f61fffc1dc1c
+vendor/lib/libqti-perfd-client.so|c150ca67156bcfd8c65efd2fd06e6a348f0bd870
 
 # Postprocessing
-vendor/lib/libdisp-aba.so
-vendor/lib/libmm-abl.so
-vendor/lib/libmm-abl-oem.so
+bin/mm-pp-daemon
+vendor/lib/libdisp-aba.so|edb1a85dc201980564a5fd7b068fac3e071afb7f
+vendor/lib/libmm-abl.so|bfb77160be06a439e3b4b2dfba0af2866f69a26e
+vendor/lib/libmm-abl-oem.so|ca811f864ad9d351679916b6c31d45df16a9d1a5
 
 # Qualcomm framework
 bin/irsc_util
 etc/data/qmi_config.xml
-vendor/lib/libt2tmanager.so
 -vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 -vendor/lib/libdsutils.so
@@ -480,59 +466,57 @@ vendor/lib/lib-rtpcommon.so
 vendor/lib/lib-rtpcore.so
 vendor/lib/lib-rtpdaemoninterface.so
 vendor/lib/lib-rtpsl.so
+vendor/qcril.db|f46b096ac207f460794f405f5cf8eb61196d2343
 
 # Sensors
-bin/sensors.qcom
-etc/sensor_def_qcomdev.conf
-vendor/lib/hw/activity_recognition.msm8974.so
-vendor/lib/hw/sensors.msm8974.so
-vendor/lib/libasn1cper.so
-vendor/lib/libasn1crt.so
-vendor/lib/libasn1crtx.so
-vendor/lib/libsensor1.so
-vendor/lib/libsensor_reg.so
-vendor/lib/libsensor_test.so
-vendor/lib/libsensor_user_cal.so
+bin/sensors.qcom|afddd3514ccdd2474ae3f4caa3771337ddac697c
+etc/sensor_def_qcomdev.conf|f209e786527214474921a2cd91c715386ab136a5
+etc/sensor_diag.cfg|bd2d2aabc609dce30f5c48dd566c3cc27cdd289f
+lib/hw/activity_recognition.msm8974.so|6c58777fae1dddceb1ad38396d4f799d199db3ee
+lib/hw/sensors.leo.so:vendor/lib/libsensors.leo.so|9c1db5bc039c6555bb801dfaef253eb74b24ed5e
+lib/libinvensense_hal.so|ae8717bd223a756dbb4675197dc03f4dc0df18d1
+vendor/lib/libasn1cper.so|503a3b4056f7342cbd0cd605f725c9a4140458c1
+vendor/lib/libasn1crt.so|45bf34728d837c304f2372842fd36a026383704b
+vendor/lib/libasn1crtx.so|0485245649a17a2ab98fd7a977da1d6d9e1b4462
+vendor/lib/libsensor1.so|8304a4c6e35a505dd0910ec13066f96f8c556254
+vendor/lib/libsensor_reg.so|8f0eb335b0a1bcf7444bea5dadcb0b5bae6db5f9
+vendor/lib/libsensor_test.so|78dd54ab5b286d64b9e31719ebb794fe87e70dfa
+vendor/lib/libsensor_user_cal.so|0e79f9d429fb8ee7999fe143b36c8a6cc9181211
 
 # Time services
-bin/time_daemon
--vendor/lib/libtime_genoff.so
--vendor/lib/libTimeService.so
--app/TimeService/TimeService.apk
+bin/time_daemon|a6379b515702f2c52f904a3ee7c357a346fdcb78
+-vendor/lib/libtime_genoff.so|b979a44a02adbc2f09eee0cdd842bc94ac3266d6
+-vendor/lib/libTimeService.so|577bd7c95a481215605bec37976547caf2e0a90e
+-app/TimeService/TimeService.apk|2700333d30538ca802d21cb1ef16d208a7a04b11
 
 # Venus (media) firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
+etc/firmware/venus.b00|105dc75c8df327e24edffb98769da83b8179fce0
+etc/firmware/venus.b01|bf9e8911980517f58341dc3ed7ba9950f2c6a5fe
+etc/firmware/venus.b02|9c67b6ae543efae805dadd28d06d21ee3aeeaa5b
+etc/firmware/venus.b03|56559f76f03511d58b4ee633d09f9ab9ac9308d0
+etc/firmware/venus.b04|c1756e0567d10a1173f481cd367ff4637b2dd77f
+etc/firmware/venus.mbn|a01eac87e4c57cb5d1e0596a31fee857977d8081
+etc/firmware/venus.mdt|a8a16453e83f32a4dd679e061f15071a4af33e39
 
 # Widevine
-vendor/lib/libwvdrm_L3.so
-vendor/lib/libWVphoneAPI.so
-vendor/lib/libWVStreamControlAPI_L3.so
-vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/drm/libdrmwvmplugin.so|32fcdf3f901c45079ccd8c99abc7481b963a880b
+vendor/lib/liboemcrypto.so|ed97a68cd9a604db43aa1267b4d525693b27afdf
+vendor/lib/libwvm.so|59c4c078f4b897ddac8f665309b7a3f25522f207
+vendor/lib/libwvdrm_L1.so|3eaf8ed1cb337608a1ccdb80d2c95804e7aea323
+vendor/lib/libWVStreamControlAPI_L1.so|6b28492ac55b9a3d86993343cf2c8b55240b3420
+vendor/lib/mediadrm/libwvdrmengine.so|6bdcc4d59b07ccbdd7b07a99677406ade3d2e232
 
 # WiFi
-bin/lowi-server
-bin/wcnss_filter
-bin/wcnss_service
-bin/xtwifi-client
-bin/xtwifi-inet-agent
+bin/wcnss_service|9506726df729e4691b6a46a1eb13b285cd4221c6
 etc/firmware/cpp_firmware_v1_1_1.fw
 etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/wcnss.b00
-etc/firmware/wcnss.b01
-etc/firmware/wcnss.b02
-etc/firmware/wcnss.b04
-etc/firmware/wcnss.b06
-etc/firmware/wcnss.b07
-etc/firmware/wcnss.b08
-etc/firmware/wcnss.b09
-etc/firmware/wcnss.mdt
-vendor/lib/libwifiscanner.so
-vendor/lib/libxtwifi_ulp_adaptor.so
-vendor/lib/libxtwifi_zpp_adaptor.so
+etc/firmware/wcnss.b00|a5804da0c1860733d68b9601443cd14f528d8406
+etc/firmware/wcnss.b01|dc2ae0262aed9fc94ba74fe5d92f4e34acd5be48
+etc/firmware/wcnss.b02|d39be080eb7a0e78ea9c2a5192724d100ae77b74
+etc/firmware/wcnss.b04|f7fde83f3a632aa7d35cda03f46382f854932ef0
+etc/firmware/wcnss.b06|1728753b2083f519e857ef1a186519ea1195f4c6
+etc/firmware/wcnss.b07|fb3d8fb74570a077e332993f7d3d27603501b987
+etc/firmware/wcnss.b08|6db99ec3aead0e567d869c2f5676483b66422d38
+etc/firmware/wcnss.b09|08a162e9fe7a87b04d694a9656fd19aa92b1565f
+etc/firmware/wcnss.mdt|49dfb1101d54a76a4a022c19653c732b80c0dc0e
