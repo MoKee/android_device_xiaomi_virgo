@@ -298,6 +298,9 @@
     <ctl name="THD2 Compensation" value="255" />
     <ctl name="THD3 Compensation" value="1" />
     <ctl name="Custom Filter" value="OFF" />
+    <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="0" />
+    <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="0" />
+    <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="0" />
     <!-- Speaker Smart PA -->
     <ctl name="Smartpa Preset" value="0" />
 
@@ -986,6 +989,9 @@
     </path>
 
     <path name="headphones">
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia4" value="1" />
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia5" value="1" />
         <ctl name="SLIM RX1 MUX" value="AIF1_PB" />
         <ctl name="SLIM RX2 MUX" value="AIF1_PB" />
         <ctl name="SLIM_0_RX Channels" value="Two" />
