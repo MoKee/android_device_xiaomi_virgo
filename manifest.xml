@@ -21,10 +21,11 @@
         <name>android.hardware.bluetooth</name>
         <transport arch="32">passthrough</transport>
         <version>1.0</version>
-        <interface>
-            <name>IBluetoothHci</name>
-            <instance>default</instance>
-        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.broadcastradio</name>
+        <transport arch="32">passthrough</transport>
+        <version>1.0</version>
     </hal>
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
@@ -33,6 +34,15 @@
         <interface>
             <name>ICameraProvider</name>
             <instance>legacy/0</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.cas</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMediaCasService</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -50,14 +60,12 @@
         <version>1.0</version>
         <interface>
             <name>ICryptoFactory</name>
-            <instance>widevine</instance>
             <instance>default</instance>
         </interface>
         <interface>
-             <name>IDrmFactory</name>
-             <instance>widevine</instance>
-             <instance>default</instance>
-         </interface>
+            <name>IDrmFactory</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gnss</name>
@@ -80,12 +88,7 @@
     <hal format="hidl">
         <name>android.hardware.graphics.composer</name>
         <transport arch="32">passthrough</transport>
-        <impl level="generic"></impl>
         <version>2.1</version>
-        <interface>
-            <name>IComposer</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.graphics.mapper</name>
@@ -158,11 +161,29 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.renderscript</name>
+        <transport arch="32">passthrough</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.sensors</name>
         <transport arch="32">passthrough</transport>
         <version>1.0</version>
         <interface>
             <name>ISensors</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.soundtrigger</name>
+        <transport arch="32">passthrough</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISoundTriggerHw</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -185,15 +206,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.renderscript</name>
-        <transport arch="32">passthrough</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDevice</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.wifi</name>
         <transport>hwbinder</transport>
         <version>1.1</version>
@@ -211,4 +223,7 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <sepolicy>
+        <version>0.0</version>
+    </sepolicy>
 </manifest>
