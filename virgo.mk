@@ -22,16 +22,10 @@ PRODUCT_PACKAGES += \
 
 # QCOM Config Script
 PRODUCT_PACKAGES += \
-    hsic.control.bt.sh \
     init.qcom.bt.sh \
     init.class_main.sh \
-    init.mdm.sh \
     init.qcom.class_core.sh \
-    init.qcom.syspart_fixup.sh \
-    init.qcom.modem_links.sh \
     init.qcom.post_boot.sh \
-    init.qcom.wifi.sh \
-    qca6234-service.sh \
     usf_post_boot.sh
 
 # GPS
@@ -134,7 +128,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/vendor/etc/audio_platform_info.xml \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/vendor/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/audio_effects.xml:system/vendor/etc/audio_effects.xml \
-    $(LOCAL_PATH)/audio/init.qcom.audio.sh:system/etc/init.qcom.audio.sh \
     $(LOCAL_PATH)/audio/listen_platform_info.xml:system/etc/listen_platform_info.xml \
     $(LOCAL_PATH)/audio/diracmobile.config:system/vendor/etc/diracmobile.config \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/vendor/etc/mixer_paths.xml \
