@@ -11,7 +11,7 @@ Basic   | Mi Note LTE
 CPU     | 2.5GHz Quad-Core MSM8974AC
 GPU     |Adreno 330
 Memory  | 3GB RAM
-Shipped Android Version | 4.4.4
+Shipped Android Version | 4.4.4 up to 6.0.1 
 Storage | 16/64GB
 Battery | 3080 mAh
 Display | 5.7" 1920 x 1080px
