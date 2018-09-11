@@ -1,0 +1,3 @@
+# Sensor
+lib/hw/sensors.leo.so:vendor/lib/libsensors.leo.so|9c1db5bc039c6555bb801dfaef253eb74b24ed5e
+lib/libinvensense_hal.so:vendor/lib/libinvensense_hal.so|ae8717bd223a756dbb4675197dc03f4dc0df18d1
