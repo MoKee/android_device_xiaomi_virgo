@@ -38,4 +38,5 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_x5gbl.bin:system/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv_x5gbl.bin
