@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mk_virgo.mk
+    $(LOCAL_DIR)/mokee_virgo.mk
