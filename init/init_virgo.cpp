@@ -46,6 +46,24 @@ using android::init::property_set;
 using android::base::ReadFileToString;
 using android::base::Trim;
 
+void property_override(char const prop[], char const value[])
+{
+    prop_info *pi;
+
+    pi = (prop_info*) __system_property_find(prop);
+    if (pi)
+        __system_property_update(pi, value, strlen(value));
+    else
+        __system_property_add(prop, strlen(prop), value, strlen(value));
+}
+
+void property_override_dual(char const system_prop[],
+        char const vendor_prop[], char const value[])
+{
+    property_override(system_prop, value);
+    property_override(vendor_prop, value);
+}
+
 void init_alarm_boot_properties()
 {
     char const *boot_reason_file = "/proc/sys/kernel/boot_reason";
@@ -82,6 +100,11 @@ void init_alarm_boot_properties()
 
 void vendor_load_properties()
 {
+    property_override_dual("ro.product.device", "ro.vendor.product.device", "virgo");
+    property_override_dual("ro.product.name", "ro.vendor.product.name", "virgo");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "Xiaomi/virgo/virgo:6.0.1/MMB29M/V8.1.6.0.MXDMIDI:user/release-keys");
+    property_override("ro.build.description", "virgo-user 6.0.1 MMB29M V8.1.6.0.MXDMIDI release-keys");
+
     property_set("rild.libargs", "-d /dev/smd0");
     init_alarm_boot_properties();
 }
