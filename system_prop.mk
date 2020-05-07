@@ -1,5 +1,4 @@
 PRODUCT_PROPERTY_OVERRIDES += \
-    ril.subscription.types=RUIM \
     ro.telephony.ril.config=simactivation \
     media.aac_51_output_enabled=true \
     persist.vendor.audio.fluence.speaker=true \
